@@ -29,7 +29,6 @@ class PrepareBaseModel:
                 layer.trainable = False
 
         x = tf.keras.layers.Flatten()(model.output)
-        x = tf.keras.layers.Dense(units=128, activation="relu")(x)
         x = tf.keras.layers.Dense(units=64, activation="relu")(x)
 
         prediction = tf.keras.layers.Dense(units=classes, activation="softmax")(x)
