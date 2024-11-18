@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ASUS/KDC-MLFLOW-DVC/mlruns/0/9e99b7bf70684c8bb9758866c2042905/artifacts
+end_time: 1731944813197
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9e99b7bf70684c8bb9758866c2042905
+run_name: lyrical-cub-221
+run_uuid: 9e99b7bf70684c8bb9758866c2042905
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731944792577
+status: 4
+tags: []
+user_id: ASUS

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ASUS/KDC-MLFLOW-DVC/mlruns/0/7394166535dc46928d03b171b421fbce/artifacts
+end_time: 1731942909336
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7394166535dc46928d03b171b421fbce
+run_name: efficient-newt-442
+run_uuid: 7394166535dc46928d03b171b421fbce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731942888271
+status: 4
+tags: []
+user_id: ASUS

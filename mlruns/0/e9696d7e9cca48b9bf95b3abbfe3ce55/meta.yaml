@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ASUS/KDC-MLFLOW-DVC/mlruns/0/e9696d7e9cca48b9bf95b3abbfe3ce55/artifacts
+end_time: 1731944163551
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e9696d7e9cca48b9bf95b3abbfe3ce55
+run_name: traveling-snipe-639
+run_uuid: e9696d7e9cca48b9bf95b3abbfe3ce55
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731944143041
+status: 4
+tags: []
+user_id: ASUS

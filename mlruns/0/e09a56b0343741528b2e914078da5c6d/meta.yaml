@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ASUS/KDC-MLFLOW-DVC/mlruns/0/e09a56b0343741528b2e914078da5c6d/artifacts
+end_time: 1731940524230
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e09a56b0343741528b2e914078da5c6d
+run_name: skillful-turtle-45
+run_uuid: e09a56b0343741528b2e914078da5c6d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731940503536
+status: 4
+tags: []
+user_id: ASUS
