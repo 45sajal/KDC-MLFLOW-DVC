@@ -700,3 +700,52 @@ x==========x]
 [2024-11-18 22:38:34,307: INFO: main: >>>>>> stage Model Evaluation completed <<<<<<
 
 x==========x]
+[2024-11-18 23:21:18,537: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-18 23:21:18,541: INFO: common: yaml_file:config\config.yaml loaded successfully]
+[2024-11-18 23:21:18,546: INFO: common: yaml_file:params.yaml loaded successfully]
+[2024-11-18 23:21:18,547: INFO: common: directory created at artifacts]
+[2024-11-18 23:21:18,548: INFO: common: directory created at artifacts/data_ingestion]
+[2024-11-18 23:21:18,550: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1e-r_aN-ulWtoWjU0V5IjsNxxPt4WGex7/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-11-18 23:21:57,105: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1e-r_aN-ulWtoWjU0V5IjsNxxPt4WGex7/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-11-18 23:21:59,948: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-18 23:22:34,411: INFO: stage_02_prepare_base_model: *******************]
+[2024-11-18 23:22:34,412: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-11-18 23:22:34,416: INFO: common: yaml_file:config\config.yaml loaded successfully]
+[2024-11-18 23:22:34,420: INFO: common: yaml_file:params.yaml loaded successfully]
+[2024-11-18 23:22:34,422: INFO: common: directory created at artifacts]
+[2024-11-18 23:22:34,423: INFO: common: directory created at artifacts/prepare_base_model]
+[2024-11-18 23:22:35,331: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-11-18 23:22:35,793: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-11-18 23:22:50,121: INFO: stage_03_model_training: *******************]
+[2024-11-18 23:22:50,122: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2024-11-18 23:22:50,130: INFO: common: yaml_file:config\config.yaml loaded successfully]
+[2024-11-18 23:22:50,135: INFO: common: yaml_file:params.yaml loaded successfully]
+[2024-11-18 23:22:50,136: INFO: common: directory created at artifacts]
+[2024-11-18 23:22:50,137: INFO: common: directory created at artifacts\training]
+[2024-11-18 23:25:55,124: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-11-18 23:26:07,630: INFO: stage_04_model_evaluation: *******************]
+[2024-11-18 23:26:07,631: INFO: stage_04_model_evaluation: >>>>>> stage Model Evaluation started <<<<<<]
+[2024-11-18 23:26:07,634: INFO: common: yaml_file:config\config.yaml loaded successfully]
+[2024-11-18 23:26:07,636: INFO: common: yaml_file:params.yaml loaded successfully]
+[2024-11-18 23:26:07,637: INFO: common: directory created at artifacts]
+[2024-11-18 23:26:48,985: INFO: common: json file saved at scores.json]
+[2024-11-18 23:26:48,986: INFO: stage_04_model_evaluation: >>>>>> stage Model Evaluation completed <<<<<<
+
+x==========x]
+[2024-11-18 23:28:36,057: INFO: stage_04_model_evaluation: *******************]
+[2024-11-18 23:28:36,058: INFO: stage_04_model_evaluation: >>>>>> stage Model Evaluation started <<<<<<]
+[2024-11-18 23:28:36,059: INFO: common: yaml_file:config\config.yaml loaded successfully]
+[2024-11-18 23:28:36,060: INFO: common: yaml_file:params.yaml loaded successfully]
+[2024-11-18 23:28:36,060: INFO: common: directory created at artifacts]
+[2024-11-18 23:28:59,386: INFO: common: json file saved at scores.json]
+[2024-11-18 23:29:02,304: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-11-18 23:29:02,994: INFO: builder_impl: Assets written to: C:\Users\ASUS\AppData\Local\Temp\tmpgvi1p14h\model\data\model\assets]
+[2024-11-18 23:29:36,785: INFO: stage_04_model_evaluation: >>>>>> stage Model Evaluation completed <<<<<<
+
+x==========x]
