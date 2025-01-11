@@ -1,19 +1,43 @@
-# Kidney-Disease-Classification-MLflow-DVC
+# Kidney Tumor Classification  
 
-## Workflows
+## Project Overview  
+This project aims to classify kidney images into two categories: **Normal** and **Tumor**. It is a **binary classification** problem leveraging Convolutional Neural Networks (CNN) and transfer learning techniques. The model training and results were managed and logged using **MLFlow**. The solution was deployed locally using **Streamlit** for interactive testing.
 
-1. Update config.yaml
-2. Update secrets.yaml [Optional]
-3. Update params.yaml
-4. Update the entity
-5. Update the configuration manager in src config
-6. Update the components
-7. Update the pipeline
-8. Update the main.py
-9. Update the dvc.yaml
-10. app.py
+---
 
-Clone the repository
+## Dataset Description  
+The dataset consists of **12,000 images**:  
+- **7,000 Normal Kidney images**  
+- **5,000 Tumor Kidney images**  
+
+### Preprocessing:
+1. **Image Augmentation**: Applied various augmentation techniques to enhance dataset diversity and improve model performance.  
+2. **OpenCV**: Used for preprocessing tasks such as resizing, normalization, and filtering.
+
+---
+
+## Methodology  
+
+### Model:  
+- **Transfer Learning**: Utilized a pre-trained model **VGGNet-16** for efficient feature extraction and classification.
+- Fine-tuned the model to adapt to kidney image classification.  
+
+### Feature Engineering:  
+- Applied data augmentation techniques, including rotation, flipping, and brightness adjustment, to increase dataset size and diversity.
+
+### Modular Coding:  
+- Implemented modular code architecture for better reusability and maintainability.  
+
+---
+
+## Tools and Technologies  
+- **Python**  
+- **TensorFlow/Keras** for deep learning model development  
+- **OpenCV** for image preprocessing  
+- **MLFlow** for model logging and tracking  
+- **Streamlit** for local deployment and user interface  
+
+## Clone the repository
 
 ```bash
 https://github.com/45sajal/KDC-MLFLOW-DVC
@@ -35,33 +59,17 @@ conda activate cnncls
 pip install -r requirements.txt
 ```
 
-## MLflow
+## Results  
+- Successfully trained the CNN model using **VGGNet-16** with high accuracy for kidney tumor classification.  
+- Improved model performance through extensive preprocessing and augmentation.  
 
-- [Documentation](https://mlflow.org/docs/latest/index.html)
+---
 
-- [MLflow tutorial](https://youtu.be/qdcHHrsXA48?si=bD5vDS60akNphkem)
+## Deployment  
+- The final model was deployed locally using **Streamlit**, enabling users to upload images and receive predictions (Normal or Tumor).  
 
-##### cmd
+---
 
-- mlflow ui
+## Conclusion  
+The project demonstrates the effective application of transfer learning and image preprocessing techniques for medical image classification. The use of modular coding, logging with MLFlow, and deployment via Streamlit highlights the importance of a complete pipeline in real-world scenarios.
 
-### dagshub
-
-[dagshub](https://dagshub.com/)
-
-MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/Kidney-Disease-Classification-MLflow-DVC.mlflow \
-MLFLOW_TRACKING_USERNAME=entbappy \
-MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0 \
-python script.py
-
-Run this to export as env variables:
-
-```bash
-
-export MLFLOW_TRACKING_URI=https://dagshub.com/<your_name>/<repo-name>.mlflow
-
-export MLFLOW_TRACKING_USERNAME=<your_name>
-
-export MLFLOW_TRACKING_PASSWORD=<your_access_token>
-
-```
